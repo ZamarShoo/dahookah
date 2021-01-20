@@ -1,0 +1,110 @@
+.instagram-wrapper {
+    position: relative;
+    margin: 87px 0 0px;
+    padding-bottom: 110px;
+
+    a {
+        height: 360px;
+        display: block;
+
+        img {
+            height: 100% !important;
+            width: 100% !important;
+            object-fit: cover !important;
+        }
+    }
+
+    .owl-item:nth-child(2n) a { background-color: rgba($color: #C4C4C4, $alpha: .3); }
+    .owl-item:nth-child(2n+1) a { background-color: rgba($color: #C4C4C4, $alpha: .7); }
+}
+
+.owl-theme .owl-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    span { display: none; }
+
+    .owl-prev {
+        display: inline-block;
+        position: absolute;
+        background: #8B3B63 !important;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top: -219px;
+        left: -70px;
+    }
+    .owl-prev::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        font-size: 0px !important;
+        background-image: url('../img/arrow.png') !important;
+        background-repeat: no-repeat;
+        background-size: 5px 10px !important;
+        width: 5px !important;
+        height: 10px !important;
+        z-index: 2;
+        top: 20px;
+        left: 22px;
+    }
+
+    .owl-next {
+        display: inline-block;
+        position: absolute;
+        background: #8B3B63 !important;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top: -219px;
+        right: -70px;
+    }
+    .owl-next::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        font-size: 0px !important;
+        background-image: url('../img/arrow.png') !important;
+        background-repeat: no-repeat;
+        background-size: 5px 10px !important;
+        width: 5px !important;
+        height: 10px !important;
+        z-index: 2;
+        top: 20px;
+        right: 22px;
+        transform: rotate(180deg);
+    }
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 6px !important;
+    height: 6px !important;
+    background: rgba(255, 255, 255, 0.33) !important;
+    transition: .3s;
+}
+
+.owl-theme .owl-dots .owl-dot span:hover {
+    background: rgba(255, 255, 255, 0.93) !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    width: 16px !important;
+    background: #8B3B63 !important;
+    border-radius: 99px !important;
+}
+
+@media screen and (max-width: 1250px) {
+    .owl-theme .owl-nav .owl-next {
+        right: -15px;
+    }
+    .owl-theme .owl-nav .owl-prev {
+        left: -15px;
+    }
+
+    .instagram-wrapper {
+        position: relative;
+        margin: 60px 0 0px;
+        padding-bottom: 80px;
+    }
+}
