@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./style/owl.theme.default.min.css">
+    <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="header">
+        <section>
+            <header>
+                <a class="logo" href="/">
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <div class="navigation" id="navigation">
+                    <div class="social">
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Outsourcing</a></li>
+                            <li><a class="active" href="#">Catering</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Privat politic</a></li>
+                        </ul>
+                    </nav>
+                    <div class="numbers">
+                        <div class="social-numbers">
+                            <a href="mailto:info@dahookah.com">
+                                <i></i>
+                                info@dahookah.com
+                            </a>
+                            <div class="social-down">
+                                <a href="">
+                                    <i></i>
+                                </a>
+                                <a class="wapp" href="">
+                                    <i></i>
+                                </a>
+                                <a href="tel:+97150 533 6426">+97150 533 6426</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                    <input type="checkbox" id="Check" name="burger">
+                    <div class="burger" id="burger" onclick="navMobile()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+            </header>
+        </section>
+    </div>
+
+<main>
+    <div class="first-slide--service">
+        <section>
+            <h2>Shisha catering in Dubai</h2>
+            <p>For your special event and celebration</p>
+            <a href="" class="btn">LET'S DISCUSS</a>
+            <div class="hookah">
+                <img src="./img/свечение кальян 1.png" alt="" class="kumar">
+                <img class="hookah-img" src="./img/Frame 1.png" alt="">
+            </div>
+            <a href="" class="contact-phone contact-phone--service">
+            </a>
+        </section>
+    </div>
+    <section>
+        <h2>What's included</h2>
+        <div class="include-wrapper">
+            <div class="include-l">
+                <div class="include-elem">
+                    <p>Professional Shisha Crew</p>
+                    <img src="./img/rewtgsfds.png" alt="" class="dahooker">
+                    <img src="./img/shutterstock_569530480 1.png" alt="" class="fon">
+                </div>
+                <div class="include-elem">
+                    <p>Wide selection of different flavors</p>
+                    <img src="./img/shutterstock3452432.png" alt="" class="fon">
+                    <img src="./img/IMG_8212 2.png" alt="" class="table">
+                </div>
+            </div>
+            <div class="include-r">
+                <div class="include-elem">
+                    <p>Premium quality shisha equipment</p>
+                    <img src="./img/gjkykjg.png" alt="" class="fon">
+                </div>
+                <div class="include-elem">
+                    <p>Fun and large clouds are guaranteed</p>
+                    <img src="./img/Group 63.png" alt="" class="fon">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="form-order">
+            <h2>Request for shisha catering</h2>
+            <form id="formOrder" action="post">
+                <div class="line">
+                    <label><span>When</span><input id="datepicker" type="text" placeholder="Select day" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"></label>
+                    <label><span>What time</span>
+                        <select name="" id="select">
+                            <option value="" disabled selected>Choose time</option>
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                            <option value="8">8</option>
+                        </select>
+                    </label>
+                    <label><span>How many shishas you whant</span>
+                        <div id="shishas">
+                            <a id="minusShishas" onclick="minusShishas()"></a>
+                            <input id="shishasInput" type="text" value="1" oninput="inputShishas()">
+                            <a id="plusShishas" onclick="plusShishas()"></a>
+                        </div>
+                    </label>
+                    <label><span>How many hours</span>
+                        <div id="hours">
+                            <a id="minusHours" onclick="minusHours()"></a>
+                            <input id="hoursInput" type="text" value="1" pattern="[0-9]{,50}" oninput="inputHours()">
+                            <a id="plusHours" onclick="plusHours()"></a>
+                        </div>
+                    </label>
+                </div>
+                <div class="line">
+                    <label><span>Phone number</span><input type="text" class="number_mask" placeholder="+971"></label>
+                    <label><span>Your E-mail</span><input type="text" placeholder="E-mail"></label>
+                    <label><span>Your Name</span><input type="text" placeholder="Your Name"></label>
+                    <label><span>Adress</span><input type="text" placeholder="Location of the catering"></label>
+                </div>
+                <input type="submit" value="PROCEED">
+            </form>
+        </div>
+    </section>
+</main>
+<div class="input-buffer"></div>
+<div class="input-buffer1"></div>
+<div class="footer">
+    <section>
+        <footer>
+            <div class="footer-l">
+                <div class="l-col">
+                    <a class="footer-logo" href="/">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                    <p>Dahookah©2021</p>
+                </div>
+                <div class="l-col">
+                    <a href="">Outsourcing</a>
+                    <a href="">Catering</a>
+                </div>
+                <div class="l-col">
+                    <a href="">Contacts</a>
+                    <a href="">Portfolio</a>
+                </div>
+                <div class="l-col">
+                    <a href="">Privat politic</a>
+                    <div class="social">
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-r">
+                <div class="numbers">
+                    <div class="social-numbers">
+                        <a href="mailto:info@dahookah.com">
+                            <i></i>
+                            info@dahookah.com
+                        </a>
+                        <div class="social-down">
+                            <a href="">
+                                <i></i>
+                            </a>
+                            <a class="wapp" href="">
+                                <i></i>
+                            </a>
+                            <a href="tel:+97150 533 6426">+97150 533 6426</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <a class="phone-footer">
+        <i></i>
+    </a>
+</div>
+
+
+<script
+			  src="https://code.jquery.com/jquery-1.12.4.min.js"
+			  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			  crossorigin="anonymous"></script>
+<script type="application/javascript" src="./js/owl.carousel.min.js"></script>
+<script src="./js/jquery.instagramFeed.min.js"></script>
+<script src="./js/jquery.maskedinput.min.js"></script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>
